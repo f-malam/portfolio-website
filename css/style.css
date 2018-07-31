@@ -1,0 +1,77 @@
+/*
+colours used
+
+primary color (light-gold): #ad974f
+Primary color (white): #ffffff
+primary color (interllectual-grey): #231f20
+secondary color (light-grey): #eaeaea
+secondary color (dark-gold):#8e793e
+secondary color (black): #000000
+
+
+*/
+
+body{
+  font-family: 'Open sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h2{
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h3{
+  font-family: 'Merriweather', serif;
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+color: #231f20
+}
+
+a:visited {
+  color: #231f20;
+}
+
+a:hover,
+a:focus {
+  color: #ad974f;
+  text-decoration: none;
+}
+
+a:active {
+  color: #231f20;
+}
+
+div {
+    padding: 10px 5px 10px 5px;
+    margin: 10px 5px 10px 5px;
+}
+
+.button {
+    border: 1px solid #ad974f;
+    font-family: inherit;
+    background-color: #ad974f;
+    color: white !important;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 1px solid;
+    transition: 0.2s opacity;
+  }
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  background-color: #8e793e;
+  color: white !important;
+}
