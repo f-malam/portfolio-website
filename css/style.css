@@ -1,25 +1,28 @@
 /*
 colours used
 
-primary color (light-gold): #ad974f
-Primary color (white): #ffffff
-primary color (interllectual-grey): #231f20
-secondary color (light-grey): #eaeaea
-secondary color (dark-gold):#8e793e
-secondary color (black): #000000
+Buttons and links (light-gold): #ad974f
+background and text(white): #ffffff
+text and background (interllectual-grey): #231f20
+small text (light-grey): #eaeaea
+Hovers (dark-gold):#8e793e
+text (black): #000000
 
 
 */
 
+/* Text Styles */
+
 body{
   font-family: 'Open sans', sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.6;
 }
 
 h1{
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h2{
@@ -32,6 +35,8 @@ h3{
   font-family: 'Merriweather', serif;
   font-size: 32px;
 }
+
+/* link styles */
 
 a {
   text-decoration: none;
@@ -49,13 +54,10 @@ a:focus {
 }
 
 a:active {
-  color: #231f20;
+  color: #ad974f;
 }
 
-div {
-    padding: 10px 5px 10px 5px;
-    margin: 10px 5px 10px 5px;
-}
+/* Elements */
 
 .button {
     border: 1px solid #ad974f;
@@ -65,7 +67,7 @@ div {
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #ad974f;
     transition: 0.2s opacity;
   }
 
@@ -74,4 +76,11 @@ div {
   cursor: pointer;
   background-color: #8e793e;
   color: white !important;
+}
+
+
+/* Layout styling */
+
+* {
+  box-sizing: border-box;
 }
