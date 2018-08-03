@@ -47,9 +47,8 @@ h3{
   font-size: 32px;
 }
 
-.copyright{
-  font-size: 12px;
-  margin-bottom: 12px;
+.copyright p {
+  font-size: 14px;
 }
 
 /* link styles */
