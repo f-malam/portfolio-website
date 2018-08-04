@@ -2,37 +2,33 @@
 <html lang="en" dir="ltr">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Malam Designs </title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,600" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<div class="wrapper">
+	<header class="top-bar" id="menu">
+		<div class="container">
 			<!--Menu-->
-			<nav id="menu">
-				<div class="container">
-					<img src="img/Malam_Designs.jpg" alt="logo" >
-					<ul class="navigation">
-						<li><a href="#contact">Contact</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#work">Work</a></li>
-						<li><a href="index.html">Home</a></li>
-					</ul>
-				</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
 			</nav>
 		</div>
 	</header>
 	<!-- Main heading -->
-	<div class="container">
-		<h1>Fatema Malam<span> UX Designer | Psychologist | London, UK</span></h1>
+	<div class="main">
+		<h1 class="container center">Fatema Malam<span> UX Designer | Psychologist | London, UK</span></h1>
 	</div>
 	<!-- My Work -->
 	<div id="work">
-		<h2>My Work</h2>
+		<h2 class="mtb20 center">My Work</h2>
 		<!--projects-->
 		<div class="container">
 			<div class="row">
@@ -67,11 +63,11 @@
 	</div>
 	<!--About-->
 	<div id="about">
-		<div class="container">
-			<h2>About Me</h2>
-			<h3>Hello!</h3>
+		<h2 class="mtb20 center">About Me</h2>
+		<div class="container center">
+			<img class ="resize" src="img/me.jpg" alt="my picture">
 			<p>
-				I am Fatema Malam, a UX Designer based in London, UK. I come primarily from an extensive psychology background, with bachelor degree in Psychology and Masters in psychology research from Kings College London. I have always been fascinated of how brain works and how we perceive and retain information.
+				HELLO! I am Fatema Malam, a UX Designer based in London, UK. I come primarily from an extensive psychology background, with bachelor degree in Psychology and Masters in psychology research from Kings College London. I have always been fascinated of how brain works and how we perceive and retain information.
 				On that note, combining my passion for technology with psychology, I decided to further develop my skills in Human computer interaction, as a UX designer. This passion grew from working as a social media executive for Vevian shoes, where I constantly engaged with users and helped improve brand perception through their website and Instagram. I love to find and solve problems in order to provide a more meaningful and fun experience for users.
 			</p>
 			<p>
@@ -82,30 +78,27 @@
 				As a user experience (UX) designer and a Psychologist, I have a deep interest in how people connect through verbal and visual communication, with great capacity for emotional and cognitive empathy. I attempt to integrate my knowledge of psychology into everything I design. Hence, I feel my multifaceted background and skillset has given me a deeper understanding of — and unique perspective into — the UX/UI design process.
 				When I’m not thinking about (or actually doing) design, I love travelling, taking pictures on my new camera, spending time with friends, belly-dancing or trying out new restaurants and cafes.
 			</p>
-			<div align="center">
+			<div class="center">
 				<p>
 					“To live a creative life, we must lose our fear of being wrong.”
 					— Joseph Chilton Pearce'
 				</p>
-				<img src="img/me.png" alt="my picture">
 			</div>
 		</div>
 	</div>
 	<!-- Contact -->
 	<footer id="contact">
-		<div class="container" align="center">
-			<h2>Get in Touch</h2>
-			<div>
-				<p>
-					If you have any questions, comments, feedback, or you'd just like to reach out,<br>please don't hesitate to get in touch. I'd love to hear from you!
-				</p>
-			</div>
+		<h2  class="mtb20 center">Get in Touch</h2>
+		<div class="container center">
+			<p class="mb">
+				If you have any questions, comments, feedback, or you'd just like to reach out,<br>please don't hesitate to get in touch. I'd love to hear from you!
+			</p>
 			<div>
 				<a href="mailto:fmalam@hotmail.co.uk" class="button">Send me an email</a>
 			</div>
-			<div>
+			<div class="social">
 				<!-- Instagram Icon -->
-				<br><a href="https://www.instagram.com/curlymissy90/?hl=en">
+				<a href="https://www.instagram.com/curlymissy90/?hl=en">
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="48px" height="48px">
 						<g id="surface1">
 							<path style="fill:#000000;" d="M32,42H16c-5.5,0-10-4.5-10-10V16c0-5.5,4.5-10,10-10h16c5.5,0,10,4.5,10,10v16   C42,37.5,37.5,42,32,42z"/>
@@ -142,11 +135,9 @@
 					</svg>
 				</a>
 			</div>
-			<div class="copyright">
-				<p>
-					&copy;2018 Malam Designs
-				</p>
-			</div>
+			<p class:"copyright">
+				&copy;2018 Malam Designs
+			</p>
 		</div>
 	</footer>
 </body>
