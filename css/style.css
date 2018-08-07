@@ -1,12 +1,13 @@
 /*
 colours used
 
-Buttons and links (light-gold): #ad974f
-Button Hover (dark-gold):#8e793e
-background and text(white): #ffffff
+Button, links, hover (gold): #AA9159
+background: #ffffff
+inner background: #fafafa
+header background: #151413
 text (black): #000000
 text and background (dark-grey): #231f20
-small text (light-grey): #eaeaea
+text (light-grey): #eaeaea
 
 
 
@@ -24,7 +25,7 @@ h1{
   font-family: 'Merriweather', serif;
   font-size: 40px;
   font-weight: 700;
-  color: #8e793e;
+  color:#eaeaea;
 }
 
 h1 span {
@@ -36,7 +37,7 @@ h1 span {
 
 h2{
   font-family: 'Merriweather', serif;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
 }
 
@@ -58,42 +59,49 @@ h3{
 
 a {
   text-decoration: none;
-  color: #8e793e;
+  color: #eaeaea;
 }
 
 a:visited {
-  color: #8e793e;
+  color: #eaeaea;
 }
 
 a:hover,
 a:focus {
-  color: #eaeaea;
+  color:  #AA9159;
 }
 
 a:active {
-  color: #eaeaea;
+  color:#AA9159;
 }
 
 
-/* Elements */
+/* button-Elements */
+
 
 .button {
-  border: 1px solid #ad974f;
+  border: 2px solid #AA9159;
   font-family: inherit;
-  background-color: #ad974f;
-  color: white !important;
+  background-color: none;
+  color: #eaeaea !important;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 1px solid #ad974f;
+  padding: 10px 20px 10px 20px;
+  margin: 5px;
+  border-radius: 1px;
   transition: 0.2s opacity;
   display: inline-block;
+}
+
+.button {
+  text-transform: uppercase;
+  letter-spacing: .2em;
 }
 
 .button:hover,
 .button:focus {
   cursor: pointer;
-  background-color: #8e793e;
+  background-color: #AA9159;
+  border-width: 2px;
 }
 
 
@@ -128,66 +136,155 @@ a:active {
 }
 
 .mb {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+}
+
+.mp-button {
+  margin-top:40px;
+  padding: 20px;
+}
+
+.movedown {
+  position: relative;
+  top: 20px;
+}
+
+.moveup {
+  position:relative;
+  bottom: 32px;
 }
 
 /* top bar & header layout - styling */
 
-.top-bar {
-  display:inline-block;
+header {
   width:100%;
-  background-color: #000000;
-  padding-right: 5px;
+  background-color:#151413;
 }
 
-ul {
-  display: inline-block;
-  list-style-type: none;
+nav {
+  overflow: hidden;
   padding: 0;
-  float: right;
 }
 
-nav ul > li {
+nav ul {
+  list-style-type: none;
+  float:right;
+}
+
+nav li {
   display: inline-block;
-  float:left;
   margin-left: 25px;
   padding: 14px 16px;
+  float: left;
 }
 
-nav ul >li> a:last-child  {
-  padding-right: 0;
-}
 
 .main {
   display: block;
-  background-color: #eaeaea;
-  padding: 60px;
+  padding: 50px;
+  background-color:#151413;
 }
 
+i.fa.fa-chevron-circle-down {
+  text-align: center;
+  color: #151413;
+  display: inline-block;
+  position: relative;
+}
+
+
+/* h2 heading styling */
 
 h2 {
   display: block;
-  padding-top: 40px;
+  padding: 40px;
+  margin: 30px 60px 0px;
+  color: #AA9159;
+  overflow: hidden;
+  text-align: center;
+}
+
+h2:before,
+h2:after {
+  background-color: #AA9159;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 30%;
+}
+h2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h2:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 
-/* layout styling: footer */
+/* footer layout styling */
 
 footer {
-  background-color: #000000;
-  color: #8e793e;
+  background-color: #151413;
+  color: #eaeaea;
 }
+
+.social {
+  margin: 40px 0;
+}
+
+
+/* Image styling */
 
 img{
   max-width: 100%;
 }
 
 .resize {
-  width:20%;
-  height:20%;
+  width:25%;
+  height:25%;
 }
-.social {
-  margin: 40px 0;
+
+
+/* work styling */
+
+.dark {
+  background-color: #fafafa;
+  border-bottom: #dddddd solid 1px;
+  padding: 48px 48px 0px;
+}
+
+.row {
+  background-color: #ffffff;
+  float: none;
+  margin:24px 24px 70px 24px;
+  padding: 5% 5% 5% 5%;
+  position: relative;
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.gold {
+  color: #AA9159;
+}
+
+
+/* About styling */
+
+p.intro {
+  font-size: 24px;
+  color: #AA9159;
+  line-height: 1.3em;
+  margin-bottom: 0.7em;
+  clear: both;
+}
+
+.max {
+  padding:30px 90px;
+  margin: 40px;
 }
 
 
