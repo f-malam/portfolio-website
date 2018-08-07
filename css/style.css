@@ -199,7 +199,6 @@ h2 {
   display: block;
   padding: 40px;
   margin: 30px 60px 0px;
-  color: #AA9159;
   overflow: hidden;
   text-align: center;
 }
@@ -309,7 +308,8 @@ p.intro {
   }
 
   .column {
-    width: 100%
+    width: 100%;
   }
+
 
 }
