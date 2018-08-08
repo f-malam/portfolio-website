@@ -55,6 +55,7 @@ h3{
   text-align: center;
 }
 
+
 /* link styles */
 
 a {
@@ -77,7 +78,6 @@ a:active {
 
 
 /* button-Elements */
-
 
 .button {
   border: 2px solid #AA9159;
@@ -103,7 +103,6 @@ a:active {
   background-color: #AA9159;
   border-width: 2px;
 }
-
 
 
 /* Layout styling */
@@ -151,8 +150,9 @@ a:active {
 
 .moveup {
   position:relative;
-  bottom: 32px;
+  bottom: 35px;
 }
+
 
 /* top bar & header layout - styling */
 
@@ -178,7 +178,6 @@ nav li {
   float: left;
 }
 
-
 .main {
   display: block;
   padding: 50px;
@@ -187,9 +186,12 @@ nav li {
 
 i.fa.fa-chevron-circle-down {
   text-align: center;
-  color: #151413;
   display: inline-block;
   position: relative;
+}
+
+.fa-caret-down {
+  color: #151413;
 }
 
 
@@ -198,7 +200,7 @@ i.fa.fa-chevron-circle-down {
 h2 {
   display: block;
   padding: 40px;
-  margin: 30px 60px 0px;
+  margin: 0px 60px 0px;
   overflow: hidden;
   text-align: center;
 }
@@ -211,7 +213,7 @@ h2:after {
   height: 1px;
   position: relative;
   vertical-align: middle;
-  width: 30%;
+  width: 20%;
 }
 h2:before {
   right: 0.5em;
@@ -228,6 +230,7 @@ h2:after {
 footer {
   background-color: #151413;
   color: #eaeaea;
+  padding: 20px;
 }
 
 .social {
@@ -252,7 +255,7 @@ img{
 .dark {
   background-color: #fafafa;
   border-bottom: #dddddd solid 1px;
-  padding: 48px 48px 0px;
+  padding: 20px 48px;
 }
 
 .row {
@@ -287,29 +290,81 @@ p.intro {
 }
 
 
+
 /*Media Queries*/
 
 /* small screen */
-@media all and (max-width:650px) {
+@media all and (max-width:767px) {
 
   h1 {
     font-size: 32px;
   }
 
   h1 span {
-    font-size: 22px
+    font-size: 14px
   }
 
   h2 {
     font-size: 32px;
+    margin: 0px 10px;
+    padding: 20px;
   }
+
   h3 {
     font-size: 24px;
   }
 
   .column {
     width: 100%;
+    padding: 0px;
   }
 
+  nav li {
+    display: inline-block;
+    margin-left: 0px;
+    padding: 0px;
+    float:left;
+    width:25%;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    float: none;
+    padding: 0px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .button {
+    width: 85%;
+    margin: 10px 0px  0px;
+  }
+
+  .mp-button {
+    margin: 0px;
+  }
+
+  .main {
+    padding: 0px 0px 20px;
+  }
+
+  .dark {
+    padding: 40px 20px 20px;
+  }
+
+  .row {
+    margin: 20px 0px 40px 0px;
+  }
+
+  .max {
+    margin: 60px 0px;
+    padding: 0px;
+  }
+
+  .resize {
+    width: 80%;
+    height: 80%;
+  }
 
 }
