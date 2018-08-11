@@ -77,6 +77,24 @@ a:active {
 }
 
 
+a.link1 {
+  transition: 0.4s font-size;
+}
+
+a.link1:hover {
+  font-size: 20px;
+}
+
+
+a.link2,
+a.lik2:active {
+  color: #000000;
+}
+
+a.link2:focus {
+  cursor: pointer;
+}
+
 /* button-Elements */
 
 .button {
@@ -88,7 +106,7 @@ a:active {
   padding: 10px 20px 10px 20px;
   margin: 5px;
   border-radius: 1px;
-  transition: 0.2s opacity;
+  transition: 0.5s background-color;
   display: inline-block;
 }
 
@@ -177,6 +195,7 @@ nav li {
   padding: 14px 16px;
   float: left;
 }
+
 
 .main {
   display: block;
@@ -269,6 +288,7 @@ img{
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
+
 .gold {
   color: #AA9159;
 }
@@ -288,6 +308,53 @@ p.intro {
   padding:30px 90px;
   margin: 40px;
 }
+
+/* Animation */
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce {
+  animation: bounceIn 2s alternate;
+}
+
+
+
+/* Other pages: INK TANK and FLASH html styling */
+
+.bg {
+  width: 100%;
+  z-index: 0;
+}
+
+.fi-x:before {
+  content:"\f00d";
+}
+
+.hero {
+  max-width: 1200px;
+  width: 100%;
+  margin:0 auto;
+}
+
+.max_2 {
+  padding:0px 90px;
+  margin: 0px 40px;
+}
+
+
+
 
 
 
@@ -320,16 +387,13 @@ p.intro {
   }
 
   nav li {
-    display: inline-block;
     margin-left: 0px;
     padding: 0px;
-    float:left;
     width:25%;
     text-align: center;
   }
 
   nav ul {
-    list-style-type: none;
     float: none;
     padding: 0px;
     display: inline-block;
