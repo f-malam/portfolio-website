@@ -14,14 +14,14 @@ text (light-grey): #eaeaea
 
 /* Text Styles */
 
-body{
+body {
   font-family: 'Open sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
 }
 
-h1{
+h1 {
   font-family: 'Merriweather', serif;
   font-size: 40px;
   font-weight: 700;
@@ -76,15 +76,23 @@ a:active {
   color:#AA9159;
 }
 
-
 a.link1 {
-  transition: 0.4s font-size;
+  display: inline-block;
 }
 
-a.link1:hover {
-  font-size: 20px;
+a.link1::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background: #aa9159;
+  transition: width .3s;
 }
 
+a.link1:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
 
 a.link2,
 a.lik2:active {
@@ -94,6 +102,7 @@ a.lik2:active {
 a.link2:focus {
   cursor: pointer;
 }
+
 
 /* button-Elements */
 
@@ -330,7 +339,6 @@ p.intro {
 }
 
 
-
 /* Other pages: INK TANK and FLASH html styling */
 
 .bg {
@@ -352,10 +360,6 @@ p.intro {
   padding:0px 90px;
   margin: 0px 40px;
 }
-
-
-
-
 
 
 /*Media Queries*/
