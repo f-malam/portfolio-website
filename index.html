@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,700i|Open+Sans:300i,400,600" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header id="menu">
@@ -15,17 +16,17 @@
 			<!--Menu-->
 			<nav>
 				<ul>
-					<li><a href="index.html" class="link1">Home</a></li>
-					<li><a href="#work" class="link1">Work</a></li>
-					<li><a href="#about" class="link1">About</a></li>
-					<li><a href="#contact" class="link1">Contact</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<!-- Main heading -->
 	<div class="main">
-		<h1 class="container center">Fatema Malam<span> UX Designer | Psychologist | London </span></h1>
+		<h1 class="container center fade animation element">Fatema Malam<span>UX Designer | Psychologist | London </span></h1>
 		<div class="center mp-button">
 			<a href="#work" class="button">View My Work</a>
 			<a href="#contact" class="button">Get in Touch</a>
@@ -42,7 +43,7 @@
 			<a href="flash.html" class="link2">
 				<div class="row">
 					<div class="column bounce">
-						<img src="img/flash.jpg" alt="Flash mobile screen">
+						<img class="animation element" src="img/flash.jpg" alt="Flash mobile screen">
 					</div>
 					<div class="column">
 						<h3>Flash</h3>
@@ -58,7 +59,7 @@
 			<a href="ink_tank.html" class="link2">
 				<div class="row">
 					<div class="column bounce">
-						<img src="img/ink_tank.jpg" alt="Ink Tank desktop & mobile screens">
+						<img class="animation element" src="img/ink_tank.jpg" alt="Ink Tank desktop & mobile screens">
 					</div>
 					<div class="column">
 						<h3>Ink Tank</h3>
@@ -74,11 +75,11 @@
 		</div>
 	</div>
 	<!--About-->
-	<div class= "dark" id="about">
+	<div class="dark" id="about">
 		<h2 class="center">About Me</h2>
 		<div class="container">
 			<div class="center">
-				<img class ="resize" src="img/me.jpg" alt="my picture">
+				<img class="resize" src="img/me.jpg" alt="my picture">
 				<p class="movedown">
 					“To live a creative life, we must lose our fear of being wrong.”
 					<br>— Joseph Chilton Pearce'
@@ -159,5 +160,7 @@
 			</p>
 		</div>
 	</footer>
+	<!-- Scripts -->
+	<script src="js/script.js"></script>
 </body>
 </html>
