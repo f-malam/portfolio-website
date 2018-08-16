@@ -76,11 +76,11 @@ a:active {
   color:#AA9159;
 }
 
-a.link1 {
+nav ul li a {
   display: inline-block;
 }
 
-a.link1::after {
+nav ul li a::after {
   content: '';
   display: block;
   width: 0;
@@ -89,13 +89,13 @@ a.link1::after {
   transition: width .3s;
 }
 
-a.link1:hover::after {
+nav ul li a:hover::after {
   width: 100%;
   transition: width .3s;
 }
 
 a.link2,
-a.lik2:active {
+a.link2:active {
   color: #000000;
 }
 
@@ -141,7 +141,7 @@ a.link2:focus {
 .container {
   max-width: 1200px;
   width: 100%;
-  padding: 15px;
+  padding: 0 20px;
   margin:0 auto;
 }
 
@@ -336,103 +336,115 @@ p.intro {
 
 .bounce {
   animation: bounceIn 2s alternate;
+  visibility: visible !important;
 }
 
-
-/* Other pages: INK TANK and FLASH html styling */
-
-.bg {
-  width: 100%;
-  z-index: 0;
-}
-
-.fi-x:before {
-  content:"\f00d";
-}
-
-.hero {
-  max-width: 1200px;
-  width: 100%;
-  margin:0 auto;
-}
-
-.max_2 {
-  padding:0px 90px;
-  margin: 0px 40px;
-}
-
-
-/*Media Queries*/
-
-/* small screen */
-@media all and (max-width:767px) {
-
-  h1 {
-    font-size: 32px;
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;
+    display:block;}
   }
 
-  h1 span {
-    font-size: 14px
-  }
+.fade {
+  animation: fadeIn 2.5s alternate;
+  visibility: visible !important;
+}
 
-  h2 {
-    font-size: 32px;
-    margin: 0px 10px;
-    padding: 20px;
-  }
 
-  h3 {
-    font-size: 24px;
-  }
+  /* Other pages: INK TANK and FLASH html styling */
 
-  .column {
+  .bg {
     width: 100%;
-    padding: 0px;
+    z-index: 0;
   }
 
-  nav li {
-    margin-left: 0px;
-    padding: 0px;
-    width:25%;
-    text-align: center;
+  .fi-x:before {
+    content:"\f00d";
   }
 
-  nav ul {
-    float: none;
-    padding: 0px;
-    display: inline-block;
+  .hero {
+    max-width: 1200px;
     width: 100%;
+    margin:0 auto;
   }
 
-  .button {
-    width: 85%;
-    margin: 10px 0px  0px;
+  .max_2 {
+    padding:0px 90px;
+    margin: 0px 40px;
   }
 
-  .mp-button {
-    margin: 0px;
-  }
 
-  .main {
-    padding: 0px 0px 20px;
-  }
+  /*Media Queries*/
 
-  .dark {
-    padding: 40px 20px 20px;
-  }
+  /* small screen */
+  @media all and (max-width:767px) {
 
-  .row {
-    margin: 20px 0px 40px 0px;
-  }
+    h1 {
+      font-size: 32px;
+    }
 
-  .max {
-    margin: 60px 0px;
-    padding: 0px;
-  }
+    h1 span {
+      font-size: 14px
+    }
 
-  .resize {
-    width: 80%;
-    height: 80%;
-  }
+    h2 {
+      font-size: 32px;
+      margin: 0px 10px;
+      padding: 20px;
+    }
 
-}
+    h3 {
+      font-size: 24px;
+    }
+
+    .column {
+      width: 100%;
+      padding: 0px;
+    }
+
+    nav li {
+      margin-left: 0px;
+      padding: 0px;
+      width:25%;
+      text-align: center;
+    }
+
+    nav ul {
+      float: none;
+      padding: 0px;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .button {
+      width: 85%;
+      margin: 10px 0px  0px;
+    }
+
+    .mp-button {
+      margin: 0px;
+    }
+
+    .main {
+      padding: 0px 0px 20px;
+    }
+
+    .dark {
+      padding: 40px 0px;
+    }
+
+    .row {
+      margin: 20px 0px 40px 0px;
+    }
+
+    .max {
+      margin: 60px 0px;
+      padding: 0px;
+    }
+
+    .resize {
+      width: 80%;
+      height: 80%;
+    }
+
+  }
