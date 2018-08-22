@@ -330,7 +330,7 @@ footer {
 /* Image styling */
 
 img {
-width: 100%;
+  width: 100%;
 }
 
 img.middle {
@@ -470,7 +470,7 @@ p.intro {
 
   /* INK TANK HTML PAGE */
 
-/* SLIDESHOW */
+  /* SLIDESHOW */
 
   .mySlides1, .myslides2 {
     display: none
@@ -570,24 +570,6 @@ p.intro {
     animation: slideInRight 2.5s alternate;
     visibility: visible !important;
   }
-
-/* parallax effect */
-
-
-
-
-
-  #background {
-      background: url('img/Interview.jpg');
-      position: fixed;
-      left: 0;
-      right: 0;
-      top: 0;
-      height: 350px;
-  }
-
-
-
 
 
 

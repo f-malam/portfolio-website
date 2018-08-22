@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-/* Scroll animation script */
+  /* Scroll animation script */
 
   $(window).scroll(function() {
     $('.animation').each(function(){
@@ -40,19 +40,13 @@ function showSlides(n, no) {
   if (n > slides.length) {slideIndex[no] = 1}
   if (n < 1) {slideIndex[no] = slides.length}
   for (i = 0; i < slides.length; i++) {
-     slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex[no]-1].style.display = "block";
   dots[slideIndex[no]-1].className += " active";
 }
 
 /* parallax effect */
-
-$(function() {
-    $(window).on('scroll', function() {
-        $('#background').css('margin-top', $(window).scrollTop() * -.3);
-    });
-});
