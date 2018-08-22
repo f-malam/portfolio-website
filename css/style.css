@@ -8,7 +8,7 @@ header background: #151413
 text (black): #000000
 text and background (dark-grey): #231f20
 text (light-grey): #eaeaea
-
+medium grey: #696969
 
 
 
@@ -47,12 +47,46 @@ h3{
   font-weight: 400;
 }
 
+h3.sub {
+  font-family: 'Merriweather', serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 0;
+}
+
+h4 {
+  font-family: 'Merriweather',serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.grey {
+  color:#696969;
+  padding:0px 50px 30px;
+  margin: 40px;
+}
 .copyright {
   font-size: 14px;
 }
 
 .center {
   text-align: center;
+}
+
+
+cite {
+  display: block;
+  font-size: 0.8125rem;
+  color:#8a8a8a;
+}
+
+i, cite, {
+  font-style: italic;
+}
+
+cite:before {
+  content:'\2014 \0020';
+  color:#8a8a8a;
 }
 
 
@@ -103,6 +137,26 @@ a.link2:focus {
   cursor: pointer;
 }
 
+a.itlink {
+  color:#aa9159;
+  display: inline-block;
+}
+
+a.itlink::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background: #aa9159;
+  transition: width .3s;
+}
+
+a.itlink:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+
 
 /* button-Elements */
 
@@ -151,6 +205,7 @@ a.link2:focus {
   padding: 0 15px;
 }
 
+
 .row:after {
   content: "";
   display: table;
@@ -174,10 +229,16 @@ a.link2:focus {
   position: relative;
   top: 20px;
 }
-
+.movemoredown {
+  padding-top: 60px;
+}
 .moveup {
   position:relative;
   bottom: 35px;
+}
+
+.bottom-space {
+  padding:0 20px 100px;
 }
 
 
@@ -268,14 +329,32 @@ footer {
 
 /* Image styling */
 
-img{
-  max-width: 100%;
+img {
+width: 100%;
+}
+
+img.middle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .resize {
-  width:25%;
-  height:25%;
+  max-width: 300px;
 }
+
+.resizetwo {
+  width: 50%;
+}
+
+.resizethree {
+  width: 70%;
+}
+
+.resizefour {
+  width:60%;
+}
+
 
 
 /* work styling */
@@ -318,6 +397,7 @@ p.intro {
   margin: 40px;
 }
 
+
 /* Animation */
 
 @keyframes bounceIn {
@@ -345,10 +425,10 @@ p.intro {
     display:block;}
   }
 
-.fade {
-  animation: fadeIn 2.5s alternate;
-  visibility: visible !important;
-}
+  .fade {
+    animation: fadeIn 2.5s alternate;
+    visibility: visible !important;
+  }
 
 
   /* Other pages: INK TANK and FLASH html styling */
@@ -373,6 +453,143 @@ p.intro {
     margin: 0px 40px;
   }
 
+  .light {
+    background-color: #ffffff;
+    padding:20px 48px;
+  }
+
+  .topandbottom {
+    padding:100px 0px 100px;
+    margin: 0px;
+
+  }
+
+  .resizetwo {
+    width:50%;
+  }
+
+  /* INK TANK HTML PAGE */
+
+/* SLIDESHOW */
+
+  .mySlides1, .myslides2 {
+    display: none
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 7px 16px;
+    margin-top: -22px;
+    color: #231f20;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius:50%;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius:50%;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #151413;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot, .dot2 {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 10px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover, .dot2:hover {
+    background-color:#AA9159;
+  }
+
+
+  /* Fading animation */
+
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .fade {
+    animatioN: fade 1.5s alternate;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .slideInLeft {
+    animation: slideInLeft 2.5s alternate;
+    visibility: visible !important;
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .slideInRight {
+    animation: slideInRight 2.5s alternate;
+    visibility: visible !important;
+  }
+
+/* parallax effect */
+
+
+
+
+
+  #background {
+      background: url('img/Interview.jpg');
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 350px;
+  }
+
+
+
+
+
 
   /*Media Queries*/
 
@@ -395,6 +612,10 @@ p.intro {
 
     h3 {
       font-size: 24px;
+    }
+
+    h3.sub {
+      font-size:24px;
     }
 
     .column {
@@ -444,7 +665,28 @@ p.intro {
 
     .resize {
       width: 80%;
-      height: 80%;
+    }
+
+    img.resizetwo {
+      width:90%;
+    }
+
+    img.resizethree {
+      width:100%;
+    }
+
+    img.resizefour {
+      width:80%;
+      padding:0 0 20px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+    }
+
+    .prev, .next {
+      padding: 2px 12px;
     }
 
   }
