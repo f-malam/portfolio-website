@@ -212,7 +212,7 @@ a.itlink:hover::after {
 
 
 .page {
-  width: 70%;
+  max-width: 850px;
 }
 
 
@@ -251,6 +251,14 @@ a.itlink:hover::after {
   padding:0 20px 100px;
 }
 
+/* project pages*/
+
+. .project-page header {
+  text-align: center;
+}
+.project-page header .container {
+  display:inline-inline-block;
+}
 
 /* top bar & header layout - styling */
 
@@ -259,14 +267,20 @@ header {
   background-color:#151413;
 }
 
+
 nav {
   overflow: hidden;
   padding: 0;
+  display: inline-block;
+  float: right;
+  margin-top: 29px;
 }
 
 nav ul {
   list-style-type: none;
-  float:right;
+  display:inline-block;
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
@@ -595,6 +609,11 @@ p.intro {
   /* small screen */
   @media all and (max-width:767px) {
 
+header {
+  display:inline-block;
+  text-align: center;
+}
+
     h1 {
       font-size: 32px;
     }
@@ -626,6 +645,12 @@ p.intro {
       padding: 0px;
     }
 
+nav {
+  overflow:unset;
+  float:none;
+  width: 100%;
+  margin-top: 0;
+}
     nav li {
       margin-left: 0px;
       padding: 0px;
@@ -635,9 +660,11 @@ p.intro {
 
     nav ul {
       float: none;
-      padding: 0px;
+      padding: 0 0 20px;
       display: inline-block;
       width: 100%;
+      border-bottom: 1px solid #aa9159;
+      margin-bottom: 40px;
     }
 
     .button {
@@ -700,4 +727,11 @@ p.intro {
       width: 100%
     }
 
+    .project-page nav {
+margin-top: 23px;
+    }
+
+    .project-page nav li {
+    float: right;
+    }
   }
