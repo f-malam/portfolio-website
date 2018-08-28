@@ -353,6 +353,9 @@ img.middle {
   max-width: 300px;
 }
 
+.resizelogo{
+  max-width: 120px;
+}
 .resizetwo {
   width: 50%;
 }
