@@ -69,6 +69,11 @@ h4 {
   padding:0px 50px 30px;
   margin: 40px;
 }
+
+.greytwo {
+  color: #8a8a8a;
+  padding-bottom: 10px;
+}
 .copyright {
   font-size: 14px;
 }
@@ -162,6 +167,7 @@ a.itlink:hover::after {
 
 
 
+
 /* button-Elements */
 
 .button {
@@ -189,6 +195,29 @@ a.itlink:hover::after {
   border-width: 2px;
 }
 
+.buttontwo {
+  border: 1px solid #AA9159;
+  font-family: inherit;
+  background-color: none;
+  color: #aa9159 !important;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 1px;
+  transition: 0.5s background-color;
+  display: inline-block;
+}
+.buttontwo {
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.buttontwo:hover,
+.buttontwo:focus {
+  cursor: pointer;
+  background-color: #000000;
+  border-width: 1px;
+  border: 1px solid #000000;
+}
 
 /* Layout styling */
 
@@ -253,11 +282,11 @@ a.itlink:hover::after {
 
 /* project pages*/
 
-. .project-page header {
+.project-page header {
   text-align: center;
 }
 .project-page header .container {
-  display:inline-inline-block;
+  display:inline-block;
 }
 
 /* top bar & header layout - styling */
@@ -382,6 +411,10 @@ img.middle {
   width:60%;
 }
 
+.toolsize {
+  max-width: 4em;
+  margin:0.5em 1em 1em 0;
+}
 
 
 /* work styling */
@@ -402,6 +435,23 @@ img.middle {
   border-radius: 3px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
+
+
+.row_nob {
+    float: none;
+    margin:24px;
+    padding: 5% 5% 5% 5%;
+    position: relative;
+    display: block;
+    border-radius: 3px;
+  }
+
+.row_nob:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 
 .gold {
   color: #AA9159;
@@ -490,6 +540,9 @@ p.intro {
 
   }
 
+.top-space {
+  padding: 30px;
+}
   .resizetwo {
     width:50%;
   }
@@ -602,6 +655,115 @@ p.intro {
     visibility: visible !important;
   }
 
+
+/*Process*/
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #000000;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timelineline {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timelineline::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #aa9459;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #fafafa;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #fafafa;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #fafafa;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fafafa transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #fafafa;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  opacity: 0.85;
+}
+
+.content ol li {
+  list-style-type: none;
+}
+
+.content ol {
+padding: 0;
+}
+
+.interview {
+  background:url(../img/Interviewtwo.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 
   /*Media Queries*/
@@ -734,4 +896,45 @@ margin-top: 23px;
     .project-page nav li {
     float: right;
     }
+
+    /* Place the timelime to the left */
+      .timeline::after {
+        left: 31px;
+      }
+
+    /* Full-width containers */
+      .timelineline {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+    /* Make sure that all arrows are pointing leftwards */
+      .timelineline::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+
+    /* Make sure all circles are at the same spot */
+      .left::after, .right::after {
+        left: 15px;
+      }
+
+    /* Make all right containers behave like the left ones */
+      .right {
+        left: 0%;
+      }
+
+    .row_nob {
+      margin: 20px 0px;
+      padding: 0;
+    }
+
+    .row_nob .column {
+      margin-bottom: 40px;
+      padding-top: 20px;
+    }
+
   }
