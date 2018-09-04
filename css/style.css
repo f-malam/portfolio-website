@@ -12,13 +12,24 @@ medium grey: #696969
 
 
 
-/* Text Styles */
+/* GENERAL */
+
+* {
+  box-sizing:border-box;
+}
 
 body {
   font-family: 'Open sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  margin:0 auto;
 }
 
 h1 {
@@ -39,6 +50,33 @@ h2{
   font-family: 'Merriweather', serif;
   font-size: 35px;
   font-weight: 700;
+}
+
+h2 {
+  display: block;
+  padding: 40px;
+  margin: 0px 60px 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+h2:before,
+h2:after {
+  background-color: #AA9159;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 20%;
+}
+h2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h2:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 h3{
@@ -74,6 +112,7 @@ h4 {
   color: #8a8a8a;
   padding-bottom: 10px;
 }
+
 .copyright {
   font-size: 14px;
 }
@@ -81,7 +120,6 @@ h4 {
 .center {
   text-align: center;
 }
-
 
 cite {
   display: block;
@@ -165,11 +203,7 @@ a.itlink:hover::after {
   transition: width .3s;
 }
 
-
-
-
 /* button-Elements */
-
 .button {
   border: 2px solid #AA9159;
   font-family: inherit;
@@ -219,31 +253,23 @@ a.itlink:hover::after {
   border: 1px solid #000000;
 }
 
-/* Layout styling */
-
-* {
-  box-sizing:border-box;
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 20px;
-  margin:0 auto;
-}
-
-
+/* LAYOUT */
 .column {
   width: 50%;
   float: left;
   padding: 0 15px;
 }
 
-
-.page {
-  max-width: 850px;
+.row {
+  background-color: #ffffff;
+  float: none;
+  margin:24px 24px 70px 24px;
+  padding: 5% 5% 5% 5%;
+  position: relative;
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
-
 
 .row:after {
   content: "";
@@ -251,51 +277,30 @@ a.itlink:hover::after {
   clear: both;
 }
 
-.mtb20 {
-  margin: 20px;
-}
-
-.mb {
-  margin-bottom: 60px;
-}
-
-.mp-button {
-  margin-top:40px;
-  padding: 20px;
-}
-
-.movedown {
+.row_nob {
+  float: none;
+  margin:24px;
+  padding: 5% 5% 5% 5%;
   position: relative;
-  top: 20px;
-}
-.movemoredown {
-  padding-top: 60px;
-}
-.moveup {
-  position:relative;
-  bottom: 35px;
+  display: block;
+  border-radius: 3px;
 }
 
-.bottom-space {
-  padding:0 20px 100px;
+.row_nob:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* project pages*/
-
-.project-page header {
-  text-align: center;
-}
-.project-page header .container {
-  display:inline-block;
+.page {
+  max-width: 850px;
 }
 
-/* top bar & header layout - styling */
-
+/* TOP BAR & HEADER */
 header {
   width:100%;
   background-color:#151413;
 }
-
 
 nav {
   overflow: hidden;
@@ -319,7 +324,6 @@ nav li {
   float: left;
 }
 
-
 .main {
   display: block;
   padding: 50px;
@@ -336,39 +340,7 @@ i.fa.fa-chevron-circle-down {
   color: #151413;
 }
 
-
-/* h2 heading styling */
-
-h2 {
-  display: block;
-  padding: 40px;
-  margin: 0px 60px 0px;
-  overflow: hidden;
-  text-align: center;
-}
-
-h2:before,
-h2:after {
-  background-color: #AA9159;
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-  width: 20%;
-}
-h2:before {
-  right: 0.5em;
-  margin-left: -50%;
-}
-h2:after {
-  left: 0.5em;
-  margin-right: -50%;
-}
-
-
-/* footer layout styling */
-
+/* FOOTER */
 footer {
   background-color: #151413;
   color: #eaeaea;
@@ -379,9 +351,100 @@ footer {
   margin: 40px 0;
 }
 
+/* SPACE (margin(t), top(t), bottom(b),padding) */
+.mtb20 {
+  margin: 20px;
+}
+
+.mb {
+  margin-bottom: 60px;
+}
+
+.mp-button {
+  margin-top:40px;
+  padding: 20px;
+}
+
+.movedown {
+  position: relative;
+  top: 20px;
+}
+
+.movemoredown {
+  padding-top: 60px;
+}
+
+.movedowntwo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.moveup {
+  position:relative;
+  bottom: 35px;
+}
+
+.bottom-space {
+  padding:0 20px 100px;
+}
+
+.bg {
+  width: 100%;
+  z-index: 0;
+}
+
+.fi-x:before {
+  content:"\f00d";
+}
+
+.hero {
+  max-width: 1200px;
+  width: 100%;
+  margin:0 auto;
+}
+
+.max_2 {
+  padding:0px 90px;
+  margin: 0px 40px;
+}
+
+.light {
+  background-color: #ffffff;
+  padding:20px 48px;
+}
+
+.topandbottom {
+  padding:100px 0px 100px;
+  margin: 0px;
+
+}
+
+.top-space {
+  padding: 30px;
+}
+.resizetwo {
+  width:50%;
+}
+
+.pr {
+  padding: 0px;
+  padding-right: 20px;
+}
+
+.down {
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+/* project pages*/
+.project-page header {
+  text-align: center;
+}
+.project-page header .container {
+  display:inline-block;
+}
 
 /* Image styling */
-
 img {
   width: 100%;
 }
@@ -416,50 +479,34 @@ img.middle {
   margin:0.5em 1em 1em 0;
 }
 
+.toolsizetwo {
+  max-width: 4em;
+  margin-bottom: 17px;
+}
 
-/* work styling */
+.toolsizethree {
+  max-width: 4.86em;
+  margin-bottom:12px;
+}
 
+.laptop {
+  background:url(../img/Interview.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* COLOR STYLING */
 .dark {
   background-color: #fafafa;
   border-bottom: #dddddd solid 1px;
   padding: 20px 0px 0px;
 }
 
-.row {
-  background-color: #ffffff;
-  float: none;
-  margin:24px 24px 70px 24px;
-  padding: 5% 5% 5% 5%;
-  position: relative;
-  display: block;
-  border-radius: 3px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-}
-
-
-.row_nob {
-    float: none;
-    margin:24px;
-    padding: 5% 5% 5% 5%;
-    position: relative;
-    display: block;
-    border-radius: 3px;
-  }
-
-.row_nob:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-
 .gold {
   color: #AA9159;
 }
 
-
-/* About styling */
-
+/* ABOUT PORTFOLIO */
 p.intro {
   font-size: 24px;
   color: #AA9159;
@@ -473,28 +520,7 @@ p.intro {
   margin: 40px;
 }
 
-
-/* Animation */
-
-@keyframes bounceIn {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.bounce {
-  animation: bounceIn 2s alternate;
-  visibility: visible !important;
-}
-
+/* ANIMATION */
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;
@@ -506,60 +532,19 @@ p.intro {
     visibility: visible !important;
   }
 
-
-  /* Other pages: INK TANK and FLASH html styling */
-
-  .bg {
-    width: 100%;
-    z-index: 0;
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
   }
 
-  .fi-x:before {
-    content:"\f00d";
+  .fade {
+    animatioN: fade 1.5s alternate;
   }
-
-  .hero {
-    max-width: 1200px;
-    width: 100%;
-    margin:0 auto;
-  }
-
-  .max_2 {
-    padding:0px 90px;
-    margin: 0px 40px;
-  }
-
-  .light {
-    background-color: #ffffff;
-    padding:20px 48px;
-  }
-
-  .topandbottom {
-    padding:100px 0px 100px;
-    margin: 0px;
-
-  }
-
-.top-space {
-  padding: 30px;
-}
-  .resizetwo {
-    width:50%;
-  }
-
-  .pr {
-    padding: 0px;
-    padding-right: 20px;
-  }
-
-  /* INK TANK HTML PAGE */
 
   /* SLIDESHOW */
-
   .mySlides1, .myslides2 {
     display: none
   }
-
   /* Slideshow container */
   .slideshow-container {
     max-width: 1000px;
@@ -610,171 +595,123 @@ p.intro {
     background-color:#AA9159;
   }
 
-
-  /* Fading animation */
-
-
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+  /*PROCESS*/
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .fade {
-    animatioN: fade 1.5s alternate;
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #000000;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
   }
 
-  @keyframes slideInLeft {
-    from {
-      transform: translate3d(-100%, 0, 0);
-      visibility: visible;
-    }
-
-    to {
-      transform: translate3d(0, 0, 0);
-    }
+  /* Container around content */
+  .timelineline {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
   }
 
-  .slideInLeft {
-    animation: slideInLeft 2.5s alternate;
-    visibility: visible !important;
+  /* The circles on the timeline */
+  .timelineline::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #aa9459;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
   }
 
-  @keyframes slideInRight {
-    from {
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-    }
-
-    to {
-      transform: translate3d(0, 0, 0);
-    }
+  /* Place the container to the left */
+  .left {
+    left: 0%;
   }
 
-  .slideInRight {
-    animation: slideInRight 2.5s alternate;
-    visibility: visible !important;
+  /* Place the container to the right */
+  .right {
+    left: 50%;
   }
 
+  /* Arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #ffffff;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fafafa;
+  }
 
-/*Process*/
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  /* Arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #ffffff;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ffffff transparent transparent;
+  }
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #000000;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
+  /* The circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
 
-/* Container around content */
-.timelineline {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    opacity: 0.90;
+  }
 
-/* The circles on the timeline */
-.timelineline::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #aa9459;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
+  .content ol li {
+    list-style-type: circle;
+  }
 
-/* Place the container to the left */
-.left {
-  left: 0%;
-}
+  .content ol {
+    padding: 20px;
+    margin-top: 0;
+  }
 
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
+  /* VIDEO */
+  iframe {
+    border:0;
+  }
 
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid #fafafa;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #fafafa;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid #fafafa;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #fafafa transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: #fafafa;
-  position: relative;
-  border-radius: 6px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-  opacity: 0.85;
-}
-
-.content ol li {
-  list-style-type: none;
-}
-
-.content ol {
-padding: 0;
-}
-
-.interview {
-  background:url(../img/Interviewtwo.jpg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-
-  /*Media Queries*/
-
+  /*MEDIA QUERIES*/
   /* small screen */
   @media all and (max-width:767px) {
 
-header {
-  display:inline-block;
-  text-align: center;
-}
+    header {
+      display:inline-block;
+      text-align: center;
+    }
 
     h1 {
       font-size: 32px;
@@ -807,12 +744,12 @@ header {
       padding: 0px;
     }
 
-nav {
-  overflow:unset;
-  float:none;
-  width: 100%;
-  margin-top: 0;
-}
+    nav {
+      overflow:unset;
+      float:none;
+      width: 100%;
+      margin-top: 0;
+    }
     nav li {
       margin-left: 0px;
       padding: 0px;
@@ -890,42 +827,46 @@ nav {
     }
 
     .project-page nav {
-margin-top: 23px;
+      margin-top: 23px;
     }
 
     .project-page nav li {
-    float: right;
+      float: right;
     }
 
     /* Place the timelime to the left */
-      .timeline::after {
-        left: 31px;
-      }
+    .timeline::after {
+      left: -23px;
+    }
 
     /* Full-width containers */
-      .timelineline {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-      }
+    .timelineline {
+      width: 114%;
+      padding-left: 5px;
+      padding-right: 1px;
+    }
 
     /* Make sure that all arrows are pointing leftwards */
-      .timelineline::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-      }
+    .timelineline::before {
+      left: -5px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
 
     /* Make sure all circles are at the same spot */
-      .left::after, .right::after {
-        left: 15px;
-      }
+    .left::after, .right::after {
+      left: -40px;
+    }
 
     /* Make all right containers behave like the left ones */
-      .right {
-        left: 0%;
-      }
+    .right {
+      left: 0%;
+    }
+
+    .content {
+      padding: 20px 10px;
+    }
 
     .row_nob {
       margin: 20px 0px;
