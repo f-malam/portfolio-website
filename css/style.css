@@ -1,7 +1,8 @@
 /*
 colours used
 
-Button, links, hover (gold): #AA9159
+Button, links, hover (gold, light gold): #AA9159
+Text and button on white background (New gold): #8A7445
 Text (dark gold): #867348
 background: #fff
 inner background (dark): #fafafa
@@ -222,9 +223,9 @@ a.itlink:hover::after {
 .button {
   border: 2px solid #aa9159;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
-  color: #eaeaea !important;
+  color: #fff !important;
   background-color: inherit;
   text-decoration: none;
   padding: 10px 20px;
@@ -248,11 +249,9 @@ a.itlink:hover::after {
 }
 
 .buttontwo {
-  border: 1px solid #aa9159;
+  border: 1px solid #8a7445;
   font-family: inherit;
-  font-size: 18px;
-  font-weight: 600;
-  color: #aa9159 !important;
+  color: #8a7445 !important;
   background-color: inherit;
   text-decoration: none;
   padding: 5px;
@@ -533,19 +532,19 @@ img.middle {
 }
 
 .gold {
-  color: #aa9159;
+  color: #8a7445;
   background-color: inherit;
 }
 
-.darkgold {
-  color: #867348;
+.lightgold {
+  color: #aa9149;
   background-color: inherit;
 }
 
 /* ABOUT PORTFOLIO */
 p.intro {
   font-size: 24px;
-  color: #aa9159;
+  color: #8a7445;
   background-color: inherit;
   line-height: 1.3em;
   margin-bottom: 0.7em;
