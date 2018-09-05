@@ -2,13 +2,14 @@
 colours used
 
 Button, links, hover (gold): #AA9159
-background: #ffffff
-inner background: #fafafa
+Text (dark gold): #867348
+background: #fff
+inner background (dark): #fafafa
 header background: #151413
-text (black): #000000
+text (black): #000
 text and background (dark-grey): #231f20
 text (light-grey): #eaeaea
-medium grey: #696969
+medium grey: #767676
 
 /* GENERAL */
 
@@ -112,7 +113,7 @@ h4 {
 }
 
 .greytwo {
-  color: #8a8a8a;
+  color: #767676;
   padding-bottom: 10px;
   background-color: inherit;
 }
@@ -128,7 +129,7 @@ h4 {
 cite {
   display: block;
   font-size: 0.8125rem;
-  color: #8a8a8a;
+  color: #767676;
   background-color: inherit;
 }
 
@@ -139,7 +140,7 @@ cite {
 
 cite::before {
   content: '\2014 \0020';
-  color: #8a8a8a;
+  color: #767676;
   background-color: inherit;
 }
 
@@ -221,6 +222,8 @@ a.itlink:hover::after {
 .button {
   border: 2px solid #aa9159;
   font-family: inherit;
+  font-weight: 600;
+  font-size: 18px;
   color: #eaeaea !important;
   background-color: inherit;
   text-decoration: none;
@@ -247,6 +250,8 @@ a.itlink:hover::after {
 .buttontwo {
   border: 1px solid #aa9159;
   font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
   color: #aa9159 !important;
   background-color: inherit;
   text-decoration: none;
@@ -529,6 +534,11 @@ img.middle {
 
 .gold {
   color: #aa9159;
+  background-color: inherit;
+}
+
+.darkgold {
+  color: #867348;
   background-color: inherit;
 }
 
