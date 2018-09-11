@@ -13,7 +13,6 @@ text (light-grey): #eaeaea
 medium grey: #767676
 
 /* GENERAL */
-
 * {
   box-sizing: border-box;
 }
@@ -146,7 +145,6 @@ cite::before {
 }
 
 /* link styles */
-
 a {
   text-decoration: none;
   color: #eaeaea;
