@@ -323,6 +323,8 @@ header {
   width: 100%;
   background-color: #151413;
   color: inherit;
+  position: fixed;
+  overflow: hidden;
 }
 
 nav {
