@@ -32,6 +32,10 @@ body {
   margin: 0 auto;
 }
 
+main {
+  padding-top: 115px;
+}
+
 h1 {
   font-family: 'Merriweather', serif;
   font-size: 40px;
@@ -324,6 +328,7 @@ header {
   background-color: #151413;
   color: inherit;
   position: fixed;
+  z-index: 999;
   overflow: hidden;
 }
 
@@ -347,6 +352,11 @@ nav li {
   margin-left: 25px;
   padding: 14px 16px;
   float: left;
+}
+
+.menu {
+  margin-left: 500px;
+  padding-left: 425px;
 }
 
 .main {
