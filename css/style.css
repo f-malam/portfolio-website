@@ -832,6 +832,26 @@ iframe {
     margin-bottom: 40px;
   }
 
+  .project-page nav {
+    overflow: unset;
+    float: none;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .project-page nav ul {
+    float: none;
+    padding: 0 0 20px;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #aa9159;
+    margin-bottom: 40px;
+  }
+
+  .project-page .resizelogo {
+    float: left;
+  }
+
   .button {
     width: 85%;
     margin: 10px 0 0;
@@ -953,5 +973,10 @@ iframe {
   .row_nob .column {
     margin-bottom: 40px;
     padding-top: 20px;
+  }
+
+  .menu {
+    margin-left: 0;
+    padding-left: 0;
   }
 }
