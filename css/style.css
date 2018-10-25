@@ -33,7 +33,7 @@ body {
 }
 
 main {
-  padding-top: 115px;
+  padding-top: 114px;
 }
 
 h1 {
@@ -231,6 +231,7 @@ a.itlink:hover::after {
 #about-section {
   padding-top: 100px;
   margin-top: -100px;
+  background-color: #fafafa;
 }
 
 #process-section {
@@ -408,7 +409,7 @@ footer {
   margin: 40px 0;
 }
 
-/* SPACE (margin(t), top(t), bottom(b),padding) */
+/* SPACE (margin(m), top(t), bottom(b),padding) */
 .mtb20 {
   margin: 20px;
 }
@@ -419,7 +420,7 @@ footer {
 
 .mp-button {
   margin-top: 40px;
-  padding: 20px;
+  padding: 20px 20px 40px;
 }
 
 .movedown {
@@ -439,6 +440,11 @@ footer {
 .moveup {
   position: relative;
   bottom: 35px;
+}
+
+.moveupmain {
+  position: relative;
+  bottom: 55px;
 }
 
 .bottom-space {
@@ -478,6 +484,10 @@ footer {
 
 .top-space {
   padding: 30px;
+}
+
+.topspace {
+  padding: 40px;
 }
 
 .resizetwo {
@@ -563,6 +573,13 @@ img.middle {
   color: inherit;
   border-bottom: #ddd solid 1px;
   padding: 20px 0 0;
+}
+
+.darkabout {
+  background-color: #fafafa;
+  color: inherit;
+  border-bottom: #ddd solid 1px;
+  padding: 50px 0;
 }
 
 .gold {
@@ -861,13 +878,13 @@ iframe {
   }
 
   #work-section {
-    padding-top: 200px;
-    margin-top: -200px;
+    padding-top: 190px;
+    margin-top: -190px;
   }
 
   #about-section {
-    padding-top: 190px;
-    margin-top: -200px;
+    padding-top: 100px;
+    margin-top: -100px;
   }
 
   #process-section {
@@ -935,6 +952,10 @@ iframe {
 
   .dark {
     padding: 40px 0;
+  }
+
+  .darkabout {
+    padding: 30px 0;
   }
 
   .row {
@@ -1039,5 +1060,19 @@ iframe {
   .menu {
     margin-left: 0;
     padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .top-space {
+    padding: 30px 0;
+  }
+
+  .timelineline.left {
+    padding: 10px 40px 10px 10px;
+  }
+
+  .timelineline.right {
+    padding: 10px 10px 10px 40px;
   }
 }
